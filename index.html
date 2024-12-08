@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maila Daiko Vatti - Nepali Cuisine</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Rajdhani:wght@300&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Maila Daiko Vatti</h1>
+      <p>Authentic Nepali Cuisine Delivered to Your Doorstep</p>
+    </div>
+  </header>
+
+  <section id="menu">
+    <h2>Today's Nepali Specials</h2>
+    <table>
+      <caption>Traditional Nepali Dishes</caption>
+      <thead>
+        <tr>
+          <th>Dish Name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dal Bhat</td>
+          <td>Traditional Nepali lentil soup served with rice and vegetables</td>
+          <td>रू 300</td>
+        </tr>
+        <tr>
+          <td>Momos</td>
+          <td>Steamed dumplings filled with minced meat or vegetables</td>
+          <td>रू 250</td>
+        </tr>
+        <tr>
+          <td>Sel Roti</td>
+          <td>Sweet, ring-shaped rice doughnut often served during festivals</td>
+          <td>रू 150</td>
+        </tr>
+        <tr>
+          <td>Thukpa</td>
+          <td>Hearty noodle soup with vegetables or meat</td>
+          <td>रू 350</td>
+        </tr>
+        <tr>
+          <td>Gundruk</td>
+          <td>Fermented leafy green vegetable dish, a traditional side dish</td>
+          <td>रू 100</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="order-form">
+    <h2>Place Your Order</h2>
+    <form id="order" action="#">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="menu-items">Select Items:</label>
+      <select id="menu-items" name="menu-items" multiple required>
+        <option value="Dal Bhat">Dal Bhat</option>
+        <option value="Momos">Momos</option>
+        <option value="Sel Roti">Sel Roti</option>
+        <option value="Thukpa">Thukpa</option>
+        <option value="Gundruk">Gundruk</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" required>
+
+      <label for="address">Delivery Address:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+</body>
+</html>
